@@ -1,0 +1,698 @@
+﻿java : WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+At line:5 char:1
++ java "@target/jmh.args" org.openjdk.jmh.Main LimiterBenchmark -wi 2 - ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (WARNING: A term...has been called:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils 
+(file:/C:/Users/USER/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# JMH version: 1.37
+# VM version: JDK 25.0.3, Java HotSpot(TM) 64-Bit Server VM, 25.0.3+9-LTS-195
+# VM invoker: C:\Program Files\Java\jdk-25.0.3\bin\java.exe
+# VM options: -DREDIS_URI=redis://127.0.0.1:6390
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 3 s each
+# Measurement: 4 iterations, 4 s each
+# Timeout: 10 min per iteration
+# Threads: 16 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.ratelimit.bench.LimiterBenchmark.baseline
+
+# Run progress: 0.00% complete, ETA 00:03:40
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/USER/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 638.898 ops/us
+# Warmup Iteration   2: 456.914 ops/us
+Iteration   1: 553.655 ops/us
+Iteration   2: 490.209 ops/us
+Iteration   3: 555.878 ops/us
+Iteration   4: 680.458 ops/us
+
+
+Result "io.ratelimit.bench.LimiterBenchmark.baseline":
+  570.050 ±(99.9%) 514.722 ops/us [Average]
+  (min, avg, max) = (490.209, 570.050, 680.458), stdev = 79.654
+  CI (99.9%): [55.328, 1084.771] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 25.0.3, Java HotSpot(TM) 64-Bit Server VM, 25.0.3+9-LTS-195
+# VM invoker: C:\Program Files\Java\jdk-25.0.3\bin\java.exe
+# VM options: -DREDIS_URI=redis://127.0.0.1:6390
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 3 s each
+# Measurement: 4 iterations, 4 s each
+# Timeout: 10 min per iteration
+# Threads: 16 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.ratelimit.bench.LimiterBenchmark.fixedWindow
+
+# Run progress: 10.00% complete, ETA 00:06:05
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/USER/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: ≈ 10⁻⁴ ops/us
+# Warmup Iteration   2: 0.001 ops/us
+Iteration   1: 0.001 ops/us
+Iteration   2: 0.001 ops/us
+Iteration   3: 0.001 ops/us
+Iteration   4: 0.001 ops/us
+
+
+Result "io.ratelimit.bench.LimiterBenchmark.fixedWindow":
+  0.001 ±(99.9%) 0.002 ops/us [Average]
+  (min, avg, max) = (0.001, 0.001, 0.001), stdev = 0.001
+  CI (99.9%): [≈ 0, 0.003] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 25.0.3, Java HotSpot(TM) 64-Bit Server VM, 25.0.3+9-LTS-195
+# VM invoker: C:\Program Files\Java\jdk-25.0.3\bin\java.exe
+# VM options: -DREDIS_URI=redis://127.0.0.1:6390
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 3 s each
+# Measurement: 4 iterations, 4 s each
+# Timeout: 10 min per iteration
+# Threads: 16 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.ratelimit.bench.LimiterBenchmark.slidingCounter
+
+# Run progress: 20.00% complete, ETA 00:04:46
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/USER/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: ≈ 10⁻⁴ ops/us
+# Warmup Iteration   2: 0.001 ops/us
+Iteration   1: 0.001 ops/us
+Iteration   2: 0.001 ops/us
+Iteration   3: 0.001 ops/us
+Iteration   4: 0.001 ops/us
+
+
+Result "io.ratelimit.bench.LimiterBenchmark.slidingCounter":
+  0.001 ±(99.9%) 0.001 ops/us [Average]
+  (min, avg, max) = (0.001, 0.001, 0.001), stdev = 0.001
+  CI (99.9%): [≈ 0, 0.003] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 25.0.3, Java HotSpot(TM) 64-Bit Server VM, 25.0.3+9-LTS-195
+# VM invoker: C:\Program Files\Java\jdk-25.0.3\bin\java.exe
+# VM options: -DREDIS_URI=redis://127.0.0.1:6390
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 3 s each
+# Measurement: 4 iterations, 4 s each
+# Timeout: 10 min per iteration
+# Threads: 16 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.ratelimit.bench.LimiterBenchmark.slidingLog
+
+# Run progress: 30.00% complete, ETA 00:03:57
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/USER/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: ≈ 10⁻³ ops/us
+# Warmup Iteration   2: ≈ 10⁻³ ops/us
+Iteration   1: 0.001 ops/us
+Iteration   2: 0.001 ops/us
+Iteration   3: 0.001 ops/us
+Iteration   4: 0.001 ops/us
+
+
+Result "io.ratelimit.bench.LimiterBenchmark.slidingLog":
+  0.001 ±(99.9%) 0.001 ops/us [Average]
+  (min, avg, max) = (0.001, 0.001, 0.001), stdev = 0.001
+  CI (99.9%): [≈ 0, 0.002] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 25.0.3, Java HotSpot(TM) 64-Bit Server VM, 25.0.3+9-LTS-195
+# VM invoker: C:\Program Files\Java\jdk-25.0.3\bin\java.exe
+# VM options: -DREDIS_URI=redis://127.0.0.1:6390
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 3 s each
+# Measurement: 4 iterations, 4 s each
+# Timeout: 10 min per iteration
+# Threads: 16 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.ratelimit.bench.LimiterBenchmark.tokenBucket
+
+# Run progress: 40.00% complete, ETA 00:03:17
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/USER/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: ≈ 10⁻⁴ ops/us
+# Warmup Iteration   2: 0.001 ops/us
+Iteration   1: 0.001 ops/us
+Iteration   2: 0.001 ops/us
+Iteration   3: 0.001 ops/us
+Iteration   4: 0.001 ops/us
+
+
+Result "io.ratelimit.bench.LimiterBenchmark.tokenBucket":
+  0.001 ±(99.9%) 0.001 ops/us [Average]
+  (min, avg, max) = (0.001, 0.001, 0.001), stdev = 0.001
+  CI (99.9%): [≈ 0, 0.002] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 25.0.3, Java HotSpot(TM) 64-Bit Server VM, 25.0.3+9-LTS-195
+# VM invoker: C:\Program Files\Java\jdk-25.0.3\bin\java.exe
+# VM options: -DREDIS_URI=redis://127.0.0.1:6390
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 3 s each
+# Measurement: 4 iterations, 4 s each
+# Timeout: 10 min per iteration
+# Threads: 16 threads, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: io.ratelimit.bench.LimiterBenchmark.baseline
+
+# Run progress: 50.00% complete, ETA 00:02:43
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/USER/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 2.289 ±(99.9%) 1.891 us/op
+# Warmup Iteration   2: 1.603 ±(99.9%) 1.340 us/op
+Iteration   1: 1.255 ±(99.9%) 0.888 us/op
+                 p0.00:   ≈ 0 us/op
+                 p0.50:   0.100 us/op
+                 p0.90:   0.100 us/op
+                 p0.95:   0.100 us/op
+                 p0.99:   0.100 us/op
+                 p0.999:  0.200 us/op
+                 p0.9999: 87.379 us/op
+                 p1.00:   166461.440 us/op
+
+Iteration   2: 1.869 ±(99.9%) 1.175 us/op
+                 p0.00:   ≈ 0 us/op
+                 p0.50:   0.100 us/op
+                 p0.90:   0.100 us/op
+                 p0.95:   0.100 us/op
+                 p0.99:   0.100 us/op
+                 p0.999:  0.200 us/op
+                 p0.9999: 106.863 us/op
+                 p1.00:   235405.312 us/op
+
+Iteration   3: 0.801 ±(99.9%) 0.609 us/op
+                 p0.00:   ≈ 0 us/op
+                 p0.50:   0.100 us/op
+                 p0.90:   0.100 us/op
+                 p0.95:   0.100 us/op
+                 p0.99:   0.100 us/op
+                 p0.999:  0.200 us/op
+                 p0.9999: 82.560 us/op
+                 p1.00:   137625.600 us/op
+
+Iteration   4: 1.566 ±(99.9%) 0.973 us/op
+                 p0.00:   ≈ 0 us/op
+                 p0.50:   0.100 us/op
+                 p0.90:   0.100 us/op
+                 p0.95:   0.100 us/op
+                 p0.99:   0.100 us/op
+                 p0.999:  0.200 us/op
+                 p0.9999: 80.953 us/op
+                 p1.00:   179568.640 us/op
+
+
+
+Result "io.ratelimit.bench.LimiterBenchmark.baseline":
+  N = 8772833
+  mean =      1.365 ±(99.9%) 0.463 us/op
+
+  Histogram, us/op:
+    [     0.000,  25000.000) = 8772749 
+    [ 25000.000,  50000.000) = 11 
+    [ 50000.000,  75000.000) = 0 
+    [ 75000.000, 100000.000) = 1 
+    [100000.000, 125000.000) = 18 
+    [125000.000, 150000.000) = 37 
+    [150000.000, 175000.000) = 9 
+    [175000.000, 200000.000) = 3 
+    [200000.000, 225000.000) = 3 
+    [225000.000, 250000.000) = 2 
+    [250000.000, 275000.000) = 0 
+
+  Percentiles, us/op:
+      p(0.0000) =        ≈ 0 us/op
+     p(50.0000) =      0.100 us/op
+     p(90.0000) =      0.100 us/op
+     p(95.0000) =      0.100 us/op
+     p(99.0000) =      0.100 us/op
+     p(99.9000) =      0.200 us/op
+     p(99.9900) =     87.772 us/op
+     p(99.9990) =  14641.233 us/op
+     p(99.9999) = 172752.280 us/op
+    p(100.0000) = 235405.312 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 25.0.3, Java HotSpot(TM) 64-Bit Server VM, 25.0.3+9-LTS-195
+# VM invoker: C:\Program Files\Java\jdk-25.0.3\bin\java.exe
+# VM options: -DREDIS_URI=redis://127.0.0.1:6390
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 3 s each
+# Measurement: 4 iterations, 4 s each
+# Timeout: 10 min per iteration
+# Threads: 16 threads, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: io.ratelimit.bench.LimiterBenchmark.fixedWindow
+
+# Run progress: 60.00% complete, ETA 00:02:13
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/USER/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 428548.096 ±(99.9%) 1521356.980 us/op
+# Warmup Iteration   2: 27011.574 ±(99.9%) 1569.602 us/op
+Iteration   1: 16973.359 ±(99.9%) 766.850 us/op
+                 p0.00:   3993.600 us/op
+                 p0.50:   14057.472 us/op
+                 p0.90:   29288.038 us/op
+                 p0.95:   36123.443 us/op
+                 p0.99:   60361.277 us/op
+                 p0.999:  152572.002 us/op
+                 p0.9999: 324534.272 us/op
+                 p1.00:   324534.272 us/op
+
+Iteration   2: 13507.140 ±(99.9%) 374.888 us/op
+                 p0.00:   3956.736 us/op
+                 p0.50:   11436.032 us/op
+                 p0.90:   24150.016 us/op
+                 p0.95:   29369.958 us/op
+                 p0.99:   47079.096 us/op
+                 p0.999:  56642.306 us/op
+                 p0.9999: 56688.640 us/op
+                 p1.00:   56688.640 us/op
+
+Iteration   3: 14049.901 ±(99.9%) 1173.006 us/op
+                 p0.00:   3731.456 us/op
+                 p0.50:   10190.848 us/op
+                 p0.90:   24543.232 us/op
+                 p0.95:   31037.850 us/op
+                 p0.99:   52279.378 us/op
+                 p0.999:  389793.448 us/op
+                 p0.9999: 390070.272 us/op
+                 p1.00:   390070.272 us/op
+
+Iteration   4: 33342.023 ±(99.9%) 4508.666 us/op
+                 p0.00:   4186.112 us/op
+                 p0.50:   15302.656 us/op
+                 p0.90:   70123.520 us/op
+                 p0.95:   153354.240 us/op
+                 p0.99:   251133.952 us/op
+                 p0.999:  465043.456 us/op
+                 p0.9999: 465043.456 us/op
+                 p1.00:   465043.456 us/op
+
+
+
+Result "io.ratelimit.bench.LimiterBenchmark.fixedWindow":
+  N = 14596
+  mean =  17043.936 ±(99.9%) 736.646 us/op
+
+  Histogram, us/op:
+    [     0.000,  50000.000) = 14191 
+    [ 50000.000, 100000.000) = 235 
+    [100000.000, 150000.000) = 53 
+    [150000.000, 200000.000) = 44 
+    [200000.000, 250000.000) = 31 
+    [250000.000, 300000.000) = 9 
+    [300000.000, 350000.000) = 1 
+    [350000.000, 400000.000) = 16 
+    [400000.000, 450000.000) = 0 
+
+  Percentiles, us/op:
+      p(0.0000) =   3731.456 us/op
+     p(50.0000) =  11911.168 us/op
+     p(90.0000) =  27305.574 us/op
+     p(95.0000) =  37158.912 us/op
+     p(99.0000) = 138936.320 us/op
+     p(99.9000) = 465043.456 us/op
+     p(99.9900) = 465043.456 us/op
+     p(99.9990) = 465043.456 us/op
+     p(99.9999) = 465043.456 us/op
+    p(100.0000) = 465043.456 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 25.0.3, Java HotSpot(TM) 64-Bit Server VM, 25.0.3+9-LTS-195
+# VM invoker: C:\Program Files\Java\jdk-25.0.3\bin\java.exe
+# VM options: -DREDIS_URI=redis://127.0.0.1:6390
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 3 s each
+# Measurement: 4 iterations, 4 s each
+# Timeout: 10 min per iteration
+# Threads: 16 threads, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: io.ratelimit.bench.LimiterBenchmark.slidingCounter
+
+# Run progress: 70.00% complete, ETA 00:01:40
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/USER/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 398938.112 ±(99.9%) 1379102.022 us/op
+# Warmup Iteration   2: 21711.293 ±(99.9%) 782.206 us/op
+Iteration   1: 20983.111 ±(99.9%) 2016.889 us/op
+                 p0.00:   4358.144 us/op
+                 p0.50:   13369.344 us/op
+                 p0.90:   34013.184 us/op
+                 p0.95:   46392.934 us/op
+                 p0.99:   108142.264 us/op
+                 p0.999:  398458.880 us/op
+                 p0.9999: 398458.880 us/op
+                 p1.00:   398458.880 us/op
+
+Iteration   2: 17204.436 ±(99.9%) 1040.281 us/op
+                 p0.00:   3391.488 us/op
+                 p0.50:   12582.912 us/op
+                 p0.90:   30834.688 us/op
+                 p0.95:   42270.720 us/op
+                 p0.99:   83087.852 us/op
+                 p0.999:  226754.560 us/op
+                 p0.9999: 226754.560 us/op
+                 p1.00:   226754.560 us/op
+
+Iteration   3: 12999.167 ±(99.9%) 363.712 us/op
+                 p0.00:   3559.424 us/op
+                 p0.50:   11010.048 us/op
+                 p0.90:   22675.456 us/op
+                 p0.95:   28803.072 us/op
+                 p0.99:   43104.338 us/op
+                 p0.999:  57671.680 us/op
+                 p0.9999: 57671.680 us/op
+                 p1.00:   57671.680 us/op
+
+Iteration   4: 26446.408 ±(99.9%) 3414.967 us/op
+                 p0.00:   3837.952 us/op
+                 p0.50:   11878.400 us/op
+                 p0.90:   51616.154 us/op
+                 p0.95:   106063.462 us/op
+                 p0.99:   240658.678 us/op
+                 p0.999:  432537.600 us/op
+                 p0.9999: 433061.888 us/op
+                 p1.00:   433061.888 us/op
+
+
+
+Result "io.ratelimit.bench.LimiterBenchmark.slidingCounter":
+  N = 14241
+  mean =  18173.899 ±(99.9%) 804.299 us/op
+
+  Histogram, us/op:
+    [     0.000,  50000.000) = 13718 
+    [ 50000.000, 100000.000) = 308 
+    [100000.000, 150000.000) = 72 
+    [150000.000, 200000.000) = 47 
+    [200000.000, 250000.000) = 48 
+    [250000.000, 300000.000) = 0 
+    [300000.000, 350000.000) = 16 
+    [350000.000, 400000.000) = 16 
+    [400000.000, 450000.000) = 16 
+
+  Percentiles, us/op:
+      p(0.0000) =   3391.488 us/op
+     p(50.0000) =  12173.312 us/op
+     p(90.0000) =  30179.328 us/op
+     p(95.0000) =  42722.918 us/op
+     p(99.0000) = 150470.656 us/op
+     p(99.9000) = 430584.103 us/op
+     p(99.9900) = 432839.485 us/op
+     p(99.9990) = 433061.888 us/op
+     p(99.9999) = 433061.888 us/op
+    p(100.0000) = 433061.888 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 25.0.3, Java HotSpot(TM) 64-Bit Server VM, 25.0.3+9-LTS-195
+# VM invoker: C:\Program Files\Java\jdk-25.0.3\bin\java.exe
+# VM options: -DREDIS_URI=redis://127.0.0.1:6390
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 3 s each
+# Measurement: 4 iterations, 4 s each
+# Timeout: 10 min per iteration
+# Threads: 16 threads, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: io.ratelimit.bench.LimiterBenchmark.slidingLog
+
+# Run progress: 80.00% complete, ETA 00:01:07
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/USER/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 321716.224 ±(99.9%) 1042561.059 us/op
+# Warmup Iteration   2: 22558.277 ±(99.9%) 759.707 us/op
+Iteration   1: 20786.503 ±(99.9%) 1105.433 us/op
+                 p0.00:   4521.984 us/op
+                 p0.50:   15015.936 us/op
+                 p0.90:   37158.912 us/op
+                 p0.95:   46733.722 us/op
+                 p0.99:   111411.200 us/op
+                 p0.999:  179830.784 us/op
+                 p0.9999: 180092.928 us/op
+                 p1.00:   180092.928 us/op
+
+Iteration   2: 45791.600 ±(99.9%) 6779.220 us/op
+                 p0.00:   5013.504 us/op
+                 p0.50:   21790.720 us/op
+                 p0.90:   71145.882 us/op
+                 p0.95:   148111.360 us/op
+                 p0.99:   462778.532 us/op
+                 p0.999:  501899.854 us/op
+                 p0.9999: 503316.480 us/op
+                 p1.00:   503316.480 us/op
+
+Iteration   3: 16214.935 ±(99.9%) 677.863 us/op
+                 p0.00:   4169.728 us/op
+                 p0.50:   13418.496 us/op
+                 p0.90:   26804.224 us/op
+                 p0.95:   32979.354 us/op
+                 p0.99:   64487.424 us/op
+                 p0.999:  154927.104 us/op
+                 p0.9999: 154927.104 us/op
+                 p1.00:   154927.104 us/op
+
+Iteration   4: 12499.276 ±(99.9%) 284.799 us/op
+                 p0.00:   3538.944 us/op
+                 p0.50:   11190.272 us/op
+                 p0.90:   19336.397 us/op
+                 p0.95:   24805.376 us/op
+                 p0.99:   39257.375 us/op
+                 p0.999:  45809.664 us/op
+                 p0.9999: 45809.664 us/op
+                 p1.00:   45809.664 us/op
+
+
+
+Result "io.ratelimit.bench.LimiterBenchmark.slidingLog":
+  N = 13427
+  mean =  18899.587 ±(99.9%) 821.880 us/op
+
+  Histogram, us/op:
+    [     0.000,  50000.000) = 12936 
+    [ 50000.000, 100000.000) = 331 
+    [100000.000, 150000.000) = 65 
+    [150000.000, 200000.000) = 31 
+    [200000.000, 250000.000) = 16 
+    [250000.000, 300000.000) = 5 
+    [300000.000, 350000.000) = 10 
+    [350000.000, 400000.000) = 11 
+    [400000.000, 450000.000) = 5 
+    [450000.000, 500000.000) = 16 
+    [500000.000, 550000.000) = 1 
+
+  Percentiles, us/op:
+      p(0.0000) =   3538.944 us/op
+     p(50.0000) =  13320.192 us/op
+     p(90.0000) =  31784.960 us/op
+     p(95.0000) =  44236.800 us/op
+     p(99.0000) = 134222.971 us/op
+     p(99.9000) = 465496.441 us/op
+     p(99.9900) = 502058.399 us/op
+     p(99.9990) = 503316.480 us/op
+     p(99.9999) = 503316.480 us/op
+    p(100.0000) = 503316.480 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 25.0.3, Java HotSpot(TM) 64-Bit Server VM, 25.0.3+9-LTS-195
+# VM invoker: C:\Program Files\Java\jdk-25.0.3\bin\java.exe
+# VM options: -DREDIS_URI=redis://127.0.0.1:6390
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 3 s each
+# Measurement: 4 iterations, 4 s each
+# Timeout: 10 min per iteration
+# Threads: 16 threads, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: io.ratelimit.bench.LimiterBenchmark.tokenBucket
+
+# Run progress: 90.00% complete, ETA 00:00:33
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/USER/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 436191.232 ±(99.9%) 1428095.845 us/op
+# Warmup Iteration   2: 39728.980 ±(99.9%) 2535.381 us/op
+Iteration   1: 26674.892 ±(99.9%) 2564.230 us/op
+                 p0.00:   5226.496 us/op
+                 p0.50:   15908.864 us/op
+                 p0.90:   48424.550 us/op
+                 p0.95:   69035.622 us/op
+                 p0.99:   208061.071 us/op
+                 p0.999:  379340.194 us/op
+                 p0.9999: 381157.376 us/op
+                 p1.00:   381157.376 us/op
+
+Iteration   2: 37463.506 ±(99.9%) 4316.641 us/op
+                 p0.00:   4349.952 us/op
+                 p0.50:   17301.504 us/op
+                 p0.90:   76414.976 us/op
+                 p0.95:   141977.190 us/op
+                 p0.99:   246037.873 us/op
+                 p0.999:  395313.152 us/op
+                 p0.9999: 395313.152 us/op
+                 p1.00:   395313.152 us/op
+
+Iteration   3: 15040.604 ±(99.9%) 480.654 us/op
+                 p0.00:   2719.744 us/op
+                 p0.50:   12304.384 us/op
+                 p0.90:   26509.312 us/op
+                 p0.95:   33357.824 us/op
+                 p0.99:   50462.720 us/op
+                 p0.999:  69799.248 us/op
+                 p0.9999: 70123.520 us/op
+                 p1.00:   70123.520 us/op
+
+Iteration   4: 16733.675 ±(99.9%) 1032.243 us/op
+                 p0.00:   3796.992 us/op
+                 p0.50:   12214.272 us/op
+                 p0.90:   27525.120 us/op
+                 p0.95:   36565.811 us/op
+                 p0.99:   133955.584 us/op
+                 p0.999:  193462.272 us/op
+                 p0.9999: 193462.272 us/op
+                 p1.00:   193462.272 us/op
+
+
+
+Result "io.ratelimit.bench.LimiterBenchmark.tokenBucket":
+  N = 12329
+  mean =  21025.879 ±(99.9%) 901.543 us/op
+
+  Histogram, us/op:
+    [     0.000,  25000.000) = 10115 
+    [ 25000.000,  50000.000) = 1515 
+    [ 50000.000,  75000.000) = 321 
+    [ 75000.000, 100000.000) = 88 
+    [100000.000, 125000.000) = 52 
+    [125000.000, 150000.000) = 88 
+    [150000.000, 175000.000) = 35 
+    [175000.000, 200000.000) = 42 
+    [200000.000, 225000.000) = 18 
+    [225000.000, 250000.000) = 22 
+    [250000.000, 275000.000) = 1 
+    [275000.000, 300000.000) = 1 
+    [300000.000, 325000.000) = 0 
+    [325000.000, 350000.000) = 1 
+    [350000.000, 375000.000) = 10 
+
+  Percentiles, us/op:
+      p(0.0000) =   2719.744 us/op
+     p(50.0000) =  13778.944 us/op
+     p(90.0000) =  35717.120 us/op
+     p(95.0000) =  53837.824 us/op
+     p(99.0000) = 161742.848 us/op
+     p(99.9000) = 393053.471 us/op
+     p(99.9900) = 395313.152 us/op
+     p(99.9990) = 395313.152 us/op
+     p(99.9999) = 395313.152 us/op
+    p(100.0000) = 395313.152 us/op
+
+
+# Run complete. Total time: 00:05:40
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark                                  Mode      Cnt       Score     Error   Units
+LimiterBenchmark.baseline                 thrpt        4     570.050 ± 514.722  ops/us
+LimiterBenchmark.fixedWindow              thrpt        4       0.001 ±   0.002  ops/us
+LimiterBenchmark.slidingCounter           thrpt        4       0.001 ±   0.001  ops/us
+LimiterBenchmark.slidingLog               thrpt        4       0.001 ±   0.001  ops/us
+LimiterBenchmark.tokenBucket              thrpt        4       0.001 ±   0.001  ops/us
+LimiterBenchmark.baseline                sample  8772833       1.365 ±   0.463   us/op
+LimiterBenchmark.baseline:p0.00          sample                  ≈ 0             us/op
+LimiterBenchmark.baseline:p0.50          sample                0.100             us/op
+LimiterBenchmark.baseline:p0.90          sample                0.100             us/op
+LimiterBenchmark.baseline:p0.95          sample                0.100             us/op
+LimiterBenchmark.baseline:p0.99          sample                0.100             us/op
+LimiterBenchmark.baseline:p0.999         sample                0.200             us/op
+LimiterBenchmark.baseline:p0.9999        sample               87.772             us/op
+LimiterBenchmark.baseline:p1.00          sample           235405.312             us/op
+LimiterBenchmark.fixedWindow             sample    14596   17043.936 ± 736.646   us/op
+LimiterBenchmark.fixedWindow:p0.00       sample             3731.456             us/op
+LimiterBenchmark.fixedWindow:p0.50       sample            11911.168             us/op
+LimiterBenchmark.fixedWindow:p0.90       sample            27305.574             us/op
+LimiterBenchmark.fixedWindow:p0.95       sample            37158.912             us/op
+LimiterBenchmark.fixedWindow:p0.99       sample           138936.320             us/op
+LimiterBenchmark.fixedWindow:p0.999      sample           465043.456             us/op
+LimiterBenchmark.fixedWindow:p0.9999     sample           465043.456             us/op
+LimiterBenchmark.fixedWindow:p1.00       sample           465043.456             us/op
+LimiterBenchmark.slidingCounter          sample    14241   18173.899 ± 804.299   us/op
+LimiterBenchmark.slidingCounter:p0.00    sample             3391.488             us/op
+LimiterBenchmark.slidingCounter:p0.50    sample            12173.312             us/op
+LimiterBenchmark.slidingCounter:p0.90    sample            30179.328             us/op
+LimiterBenchmark.slidingCounter:p0.95    sample            42722.918             us/op
+LimiterBenchmark.slidingCounter:p0.99    sample           150470.656             us/op
+LimiterBenchmark.slidingCounter:p0.999   sample           430584.103             us/op
+LimiterBenchmark.slidingCounter:p0.9999  sample           432839.485             us/op
+LimiterBenchmark.slidingCounter:p1.00    sample           433061.888             us/op
+LimiterBenchmark.slidingLog              sample    13427   18899.587 ± 821.880   us/op
+LimiterBenchmark.slidingLog:p0.00        sample             3538.944             us/op
+LimiterBenchmark.slidingLog:p0.50        sample            13320.192             us/op
+LimiterBenchmark.slidingLog:p0.90        sample            31784.960             us/op
+LimiterBenchmark.slidingLog:p0.95        sample            44236.800             us/op
+LimiterBenchmark.slidingLog:p0.99        sample           134222.971             us/op
+LimiterBenchmark.slidingLog:p0.999       sample           465496.441             us/op
+LimiterBenchmark.slidingLog:p0.9999      sample           502058.399             us/op
+LimiterBenchmark.slidingLog:p1.00        sample           503316.480             us/op
+LimiterBenchmark.tokenBucket             sample    12329   21025.879 ± 901.543   us/op
+LimiterBenchmark.tokenBucket:p0.00       sample             2719.744             us/op
+LimiterBenchmark.tokenBucket:p0.50       sample            13778.944             us/op
+LimiterBenchmark.tokenBucket:p0.90       sample            35717.120             us/op
+LimiterBenchmark.tokenBucket:p0.95       sample            53837.824             us/op
+LimiterBenchmark.tokenBucket:p0.99       sample           161742.848             us/op
+LimiterBenchmark.tokenBucket:p0.999      sample           393053.471             us/op
+LimiterBenchmark.tokenBucket:p0.9999     sample           395313.152             us/op
+LimiterBenchmark.tokenBucket:p1.00       sample           395313.152             us/op
+
+Benchmark result is saved to bench/results/jmh-16-threads.json

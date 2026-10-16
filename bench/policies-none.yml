@@ -1,0 +1,9 @@
+# Gateway as a plain reverse proxy: the single rule only matches a route the benchmark never calls,
+# so no Redis call is made. Separates "cost of proxying" from "cost of limiting".
+rules:
+  - name: never-hit
+    scope: ROUTE
+    match: /never-called/**
+    algorithm: FIXED_WINDOW
+    limit: 1
+    window: 1h

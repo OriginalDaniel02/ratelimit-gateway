@@ -1,0 +1,9 @@
+# Limiter on the request path, limits so high nothing is ever rejected: measures overhead only.
+rules:
+  - name: per-key
+    scope: API_KEY
+    match: "*"
+    algorithm: TOKEN_BUCKET
+    limit: 1000000000
+    window: 1s
+    burst: 1000000000

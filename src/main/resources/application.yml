@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+spring:
+  threads:
+    virtual:
+      enabled: true
+
+gateway:
+  upstream: http://localhost:9000
+  redis-uri: redis://localhost:6379
+  policy-file: policies.yml

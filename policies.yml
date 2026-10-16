@@ -1,0 +1,33 @@
+# Hot-reloaded: edit and save, no restart needed. An invalid edit is rejected and the previous rules stay active
+# (see GET /_gateway/status -> policyError).
+#
+# scope: API_KEY | IP | ROUTE
+#   API_KEY  match = a specific key, or "*" for a separate bucket per key
+#   IP       match = a specific address, or "*" for a separate bucket per address
+#   ROUTE    match = path pattern, e.g. /api/orders/**; one bucket shared by all callers
+# algorithm: TOKEN_BUCKET (default) | FIXED_WINDOW | SLIDING_LOG | SLIDING_COUNTER
+# burst: TOKEN_BUCKET only, bucket capacity (>= limit)
+# onRedisFailure: FAIL_OPEN (default) | FAIL_CLOSED
+rules:
+  - name: per-key
+    scope: API_KEY
+    match: "*"
+    algorithm: TOKEN_BUCKET
+    limit: 100
+    window: 1s
+    burst: 150
+
+  - name: per-ip
+    scope: IP
+    match: "*"
+    algorithm: SLIDING_COUNTER
+    limit: 300
+    window: 1m
+
+  - name: checkout-route
+    scope: ROUTE
+    match: /api/checkout/**
+    algorithm: SLIDING_LOG
+    limit: 20
+    window: 1s
+    onRedisFailure: FAIL_CLOSED   # protect the payment upstream even if limiting is down
